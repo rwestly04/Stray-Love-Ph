@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adoption – Stray Love PH</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+            <img src="image/logo.jpg" alt="Stray Love PH Logo">
+            <h2>Stray Love PH</h2>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="animals.html">Available Animals</a></li>
+            <li><a href="adoption.html" class="active">Adoption</a></li>
+            <li><a href="surrender.html">Surrender</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <div class="page-wrapper">
+        <section class="form-section">
+            <h2>Adoption Form</h2>
+            <p class="section-subtitle">Follow the steps below to adopt a pet.</p>
+
+            <div class="steps">
+                <div class="step"><span>1</span> Submit application</div>
+                <div class="step"><span>2</span> Interview with shelter</div>
+                <div class="step"><span>3</span> Meet the animal</div>
+                <div class="step"><span>4</span> Take your pet home</div>
+            </div>
+
+            <form onsubmit="submitForm(event)">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Home Address" rows="4"></textarea>
+                <button type="submit">Submit Application</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2026 Stray Love PH Shelter</p>
+    </footer>
+
+    <script>
+        function submitForm(e) {
+            e.preventDefault();
+            alert("Adoption application submitted successfully! We will contact you soon.");
+            e.target.reset();
+        }
+    </script>
+
+</body>
+</html>

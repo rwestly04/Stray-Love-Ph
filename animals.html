@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Available Animals – Stray Love PH</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+            <img src="image/logo.jpg" alt="Stray Love PH Logo">
+            <h2>Stray Love PH</h2>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="animals.html" class="active">Available Animals</a></li>
+            <li><a href="adoption.html">Adoption</a></li>
+            <li><a href="surrender.html">Surrender</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <div class="page-wrapper">
+        <section class="animals-section">
+            <h2>Available Animals</h2>
+            <p class="section-subtitle">These loving animals are waiting for a forever home.</p>
+
+            <div class="cards">
+
+                <div class="card">
+                    <img src="image/dog1.jpg" alt="Buddy">
+                    <div class="card-body">
+                        <h3>Buddy</h3>
+                        <button onclick="adoptPet('Buddy')">Adopt</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="image/imagecat.jpg" alt="Milo">
+                    <div class="card-body">
+                        <h3>Milo</h3>
+                        <button onclick="adoptPet('Milo')">Adopt</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="image/imagedog3.jpg" alt="Luna">
+                    <div class="card-body">
+                        <h3>Luna</h3>
+                        <button onclick="adoptPet('Luna')">Adopt</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="image/imagedog2.jpg" alt="Rocky">
+                    <div class="card-body">
+                        <h3>Rocky</h3>
+                        <button onclick="adoptPet('Rocky')">Adopt</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="image/imagedog4.jpg" alt="Arya">
+                    <div class="card-body">
+                        <h3>Arya</h3>
+                        <button onclick="adoptPet('Arya')">Adopt</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="image/imagedog5.jpg" alt="Lily">
+                    <div class="card-body">
+                        <h3>Lily</h3>
+                        <button onclick="adoptPet('Lily')">Adopt</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2026 Stray Love PH Shelter</p>
+    </footer>
+
+    <script>
+        function adoptPet(name) {
+            alert("Please fill out the adoption form to adopt " + name + "!");
+            window.location.href = "adoption.html";
+        }
+    </script>
+
+</body>
+</html>
